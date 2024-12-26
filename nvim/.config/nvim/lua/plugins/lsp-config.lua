@@ -21,7 +21,7 @@ return {
 
 			local servers = {
 				"lua_ls",
-        "zls",
+				"zls",
 			}
 
 			local lspconfig = require("lspconfig")
