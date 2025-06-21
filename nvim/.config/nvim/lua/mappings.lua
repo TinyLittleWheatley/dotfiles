@@ -1,7 +1,14 @@
-require("nvchad.mappings")
+require "nvchad.mappings"
 
 -- add yours here
 
 local map = vim.keymap.set
+local del = vim.keymap.del
 
 -- map({ "n", "i", "v" }, "<C-s>", "<cmd> w <cr>")
+
+-- disable tabufline mappings
+del("n", "<leader>b")
+del("n", "<tab>")
+del("n", "<S-tab>")
+del("n", "<leader>x")
