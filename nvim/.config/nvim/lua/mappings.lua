@@ -12,3 +12,6 @@ del("n", "<leader>b")
 del("n", "<tab>")
 del("n", "<S-tab>")
 del("n", "<leader>x")
+del("n", "<C-n>")
+
+map("n", "<leader>e", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
