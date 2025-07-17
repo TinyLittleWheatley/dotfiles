@@ -9,8 +9,8 @@ local del = vim.keymap.del
 
 -- disable tabufline mappings
 del("n", "<leader>b")
-del("n", "<tab>")
-del("n", "<S-tab>")
+del({ "n", "i", "s" }, "<tab>")
+del({ "n", "i", "s" }, "<S-tab>")
 del("n", "<leader>x")
 del("n", "<C-n>")
 
