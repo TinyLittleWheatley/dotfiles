@@ -86,9 +86,13 @@ M.defaults = function()
   end
 end
 
-local servers = { "html", "cssls" }
+local servers = {
+  "html",
+  "cssls",
+  "zls",
+}
 vim.lsp.enable(servers)
 
--- read :h vim.lsp.config for changing options of lsp servers 
+-- read :h vim.lsp.config for changing options of lsp servers
 
 return M
