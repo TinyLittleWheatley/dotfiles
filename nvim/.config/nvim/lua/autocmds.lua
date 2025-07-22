@@ -25,17 +25,3 @@ autocmd({ "UIEnter", "BufReadPost", "BufNewFile" }, {
     end
   end,
 })
-
-autocmd("CmdlineEnter", {
-  pattern = "*",
-  callback = function()
-    vim.o.cmdheight = 1
-  end,
-})
-
-autocmd("CmdlineLeave", {
-  pattern = "*",
-  callback = function()
-    vim.o.cmdheight = 0
-  end,
-})
